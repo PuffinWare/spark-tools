@@ -107,6 +107,8 @@ class ParseFont(object):
       return '(space)'
     if c == 0x5c:
       return '(backslash)'
+    if c == 0x7f:
+      return '(deg)'
     return chr(c)
 
 def setup_logger(debug):
